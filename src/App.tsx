@@ -1,8 +1,8 @@
 
 import './App.css'
-import { motion } from "motion/react"
-import Header from './components/header/header'
-import CardHover from './hover/page'
+// import { motion } from "motion/react"
+// import Header from './components/header/header'
+// import CardHover from './hover/page'
 import ClerkCardhover from './components/ClerkCardhover'
 
 function App() {
@@ -66,16 +66,6 @@ Subsccribed
 
 
 
-const box = {
-  x: 0,
-  y: 0,
-  scale: 1,
-  rotate: 0,
-  borderRadius: 0,
-  backgroundColor: "white",
-  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
-  height: "100px",
-  width: "100px",
-}
+
 
 export default App
