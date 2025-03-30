@@ -1,23 +1,32 @@
-
 import './App.css'
 // import { motion } from "motion/react"
 // import Header from './components/header/header'
 // import CardHover from './hover/page'
 import ClerkCardhover from './components/ClerkCardhover'
+import HundriAgenda from './components/HundriAgenda'
+import MotionHooks from './components/motionhooks/motionhook'
+import MymotionCom from './components/motionhooks/mymotonhool'
+import Position from './components/position'
+import RocketLunch from './components/RocketLunch'
+import Websiteproject from './components/Websiteproject'
 
 function App() {
-
-
   return (
     <>
-    <div className="all  bg-[#131316] min-h-screen flex flex-col items-center justify-center">
-    {/* <Header/> */}
-    <ClerkCardhover/>
-    {/* <CardHover/> */}
-    </div>
+      <div className="w-[99.8dhw]">
+        <Websiteproject />
+        {/* <Position /> */}
+      </div>
+      {/* <div className="all  bg-neutral-900  min-h-screen flex flex-col items-center justify-center text-neutral-200"> */}
+      {/* <Header/> */}
+      {/* <ClerkCardhover/> main for man o arora */}
+      {/* <MotionHooks /> */}
+      {/* <MymotionCom/> */}
+      {/* <RocketLunch/> */}
+      {/* <CardHover/> */}
+      {/* </div> */}
 
-
-{/* <div className="h-screen    [prespective::1000px]  w-full bg-neutral-900  items-center justify-center ">
+      {/* <div className="h-screen    [prespective::1000px]  w-full bg-neutral-900  items-center justify-center ">
 
 
 
@@ -56,16 +65,9 @@ Subsccribed
 </span>
 </motion.button> */}
 
-
-{/* </div> */}
-
+      {/* </div> */}
     </>
   )
 }
-
-
-
-
-
 
 export default App
