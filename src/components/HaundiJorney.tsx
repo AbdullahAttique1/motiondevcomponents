@@ -4,19 +4,19 @@ import { motion } from 'motion/react'
 const HaundiJorney = () => {
   return (
     <>
-      <div className="wraper max-w-[98.8vw] overflow-hidden">
+      <div className="wraper w-[98.8vw] overflow-hidden md:w-[99.8vw]">
         <div className="m-auto flex w-full flex-col items-center justify-between lg:w-[52rem] lg:flex-row">
-          <div className="left w-96 lg:w-36">
+          <div className="left w-96 lg:w-44">
             <div className="heading mt-6 mb-4 text-xl lg:mt-1 lg:text-sm">
               Our journey
             </div>
 
-            <div className="para text-4xl font-bold lg:text-xl">
+            <div className="para text-4xl font-bold lg:text-2xl">
               Shaping the future, side by side
             </div>
           </div>
 
-          <div className="right mt-20 w-[28rem] px-4 font-semibold lg:px-4 lg:text-base">
+          <div className="right mt-20 w-[28rem] px-4 font-semibold lg:px-4 lg:text-xl">
             Cada paso que damos nos acerca a un futuro de crecimiento y
             transformación. Este evento es un punto de encuentro para alinear
             fuerzas, compartir ideas y avanzar juntos. Un espacio para
@@ -112,7 +112,7 @@ const HaundiJorney = () => {
           </div>
         </div>
 
-        <div className="mt-52 h-2 bg-white"></div>
+        <div className="mt-52 h-2 w-[96vw] overflow-hidden bg-white"></div>
       </div>
     </>
   )

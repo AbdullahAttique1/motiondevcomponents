@@ -1,10 +1,11 @@
 import { ArrowUpRight } from 'lucide-react'
 import { useScroll, motion, useMotionValueEvent } from 'motion/react'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const HundriAgenda = () => {
   const [width, setWidth] = useState<number>(100)
   const ref = useRef<HTMLDivElement>(null)
+  const [device, setDevice] = useState('pc')
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -16,13 +17,26 @@ const HundriAgenda = () => {
     setWidth(Math.max(50, newWidth))
   })
 
+  useEffect(() => {
+    const updateDevice = () => {
+      const width = window.innerWidth
+      if (width < 768) setDevice('mobile')
+      else if (width >= 768 && width < 1024) setDevice('tablet')
+      else setDevice('pc')
+    }
+
+    updateDevice() // Initial check
+    window.addEventListener('resize', updateDevice)
+    return () => window.removeEventListener('resize', updateDevice)
+  }, [])
+
   return (
     <>
       <div className="relative flex flex-col" ref={ref}>
-        <div className="sticky top-0 h-screen w-full overflow-hidden">
+        <div className="top-0 mt-1 h-screen w-full overflow-hidden md:sticky lg:mt-0">
           <motion.div
-            style={{ width: `${width}vw` }}
             className="relative h-full w-full bg-blue-500"
+            style={{ width: device === 'mobile' ? '100%' : `${width}vw` }}
           >
             <div className="absolute inset-0 z-10 flex items-center justify-center">
               <h1 className="text-3xl text-white">El espacio</h1>
@@ -38,7 +52,7 @@ const HundriAgenda = () => {
           </motion.div>
         </div>
 
-        <div className="top-screen relative flex w-[48vw] flex-col self-end p-8 text-xl text-black">
+        <div className="top-screen relative flex w-[98vw] flex-col self-end p-8 text-xl text-black md:w-[48vw]">
           <h1 className="mb-4 text-2xl font-bold">Finca el Olivar.</h1>
           <p>
             Ubicado en un entorno privilegiado, El Olivar no es solo un lugar,

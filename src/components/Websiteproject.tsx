@@ -45,7 +45,7 @@ const Websiteproject = () => {
         ></motion.div>
       </div>
 
-      <div className="header relative w-[99.8vw] md:w-[98vw]">
+      <div className="w-[97vw] md:w-[99vw]">
         <HandiaHeader />
       </div>
 
@@ -58,8 +58,7 @@ const Websiteproject = () => {
       >
         <HyndriHero />
       </motion.div>
-
-      <div className="lay w-[98.5vw] overflow-hidden bg-white md:w-[98.8vw]">
+      <div className="lay relative w-[97vw] overflow-hidden bg-white md:w-[97vw] lg:w-[99vw]">
         <HaundiJorney />
       </div>
 
@@ -72,22 +71,19 @@ const Websiteproject = () => {
       >
         <ScrollTextEffect
           words={sampleText}
-          className="mx-auto w-[23rem] text-center text-6xl text-white md:text-8xl"
+          className="mx-auto w-[23rem] text-center text-6xl text-white md:w-[32rem] md:text-8xl"
         />
       </div>
-
       <div className="w-full bg-white">
         <CarmovesHaundai />
       </div>
-
       <div className="h-[5rem] w-full bg-white"></div>
       <div className="bg-white">
         <CarsLinks />
       </div>
-
-      <div className="w-full bg-white">
+      {/* <div className="w-full bg-white">
         <CalltoAction />
-      </div>
+      </div> */}
       <div className="agenda bg-white">
         <HundriAgenda />
       </div>
