@@ -45,7 +45,7 @@ const Websiteproject = () => {
         ></motion.div>
       </div>
 
-      <div className="w-[97vw] md:w-[99vw]">
+      <div className="w-[97vw] overflow-hidden md:w-[99vw]">
         <HandiaHeader />
       </div>
 
