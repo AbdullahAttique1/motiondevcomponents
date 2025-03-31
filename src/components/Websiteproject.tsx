@@ -19,8 +19,6 @@ const Websiteproject = () => {
     offset: ['start end', 'end center'],
   })
 
-  const scale = useTransform(scrollY, [0, 400], [1, 1.9])
-
   const opacity = useTransform(scrollY, [1, 280], [1, 0])
   const sampleText = `Cuando
   unimos
@@ -31,41 +29,39 @@ const Websiteproject = () => {
   partes.`
   return (
     <div className="relative flex flex-col">
-      <motion.div
-        ref={ref}
-        transition={{
-          duration: 0.4,
-          ease: 'easeInOut',
-        }}
-        className="bg-background fixed top-0 left-0 -z-10 h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat"
-        style={{
-          height: '100vh',
-          scale,
-          backgroundImage:
-            "url('https://convencion-hyundai.plastic.design/images/hero.jpg')",
-        }}
-      >
-        {' '}
-      </motion.div>
-
-      <div className="header relative w-[98vw]">
-        <HandiaHeader />
-      </div>
-      <main>
+      <div className="image w-full overflow-hidden">
         <motion.div
           ref={ref}
-          style={{
-            opacity,
+          transition={{
+            duration: 0.4,
+            ease: 'easeInOut',
           }}
-          className="hero"
-        >
-          <HyndriHero />
-        </motion.div>
+          className="bg-background fixed top-0 right-0 left-0 -z-10 h-screen w-[98.8vw] overflow-hidden bg-cover bg-center bg-no-repeat"
+          style={{
+            height: '100vh',
+            backgroundImage:
+              "url('https://convencion-hyundai.plastic.design/images/hero.jpg')",
+          }}
+        ></motion.div>
+      </div>
 
-        <div className="lay w-[98.8vw] bg-white">
-          <HaundiJorney />
-        </div>
-      </main>
+      <div className="header relative w-[99.8vw] md:w-[98vw]">
+        <HandiaHeader />
+      </div>
+
+      <motion.div
+        ref={ref}
+        style={{
+          opacity,
+        }}
+        className="hero"
+      >
+        <HyndriHero />
+      </motion.div>
+
+      <div className="lay w-[98.5vw] overflow-hidden bg-white md:w-[98.8vw]">
+        <HaundiJorney />
+      </div>
 
       <div
         className="sticky left-0 w-full overflow-hidden bg-cover bg-center bg-no-repeat"
@@ -76,7 +72,7 @@ const Websiteproject = () => {
       >
         <ScrollTextEffect
           words={sampleText}
-          className="mx-auto w-[23rem] text-8xl text-white"
+          className="mx-auto w-[23rem] text-center text-6xl text-white md:text-8xl"
         />
       </div>
 

@@ -4,15 +4,15 @@ import { motion } from 'motion/react'
 const CalltoAction = () => {
   return (
     <>
-      <div className="relative">
-        <div className="relative flex h-[45rem] items-center justify-center">
-          <div className="right ml-14 flex w-[50%] flex-col items-start justify-center">
+      <div className="relative mb-5">
+        <div className="relative flex flex-col items-center justify-center md:h-[45rem] md:flex-row">
+          <div className="right ml-1 flex w-full flex-col items-start justify-center px-1 md:ml-14 md:w-[50%]">
             <div className="h1">
-              <h1 className="mt-16 text-6xl font-semibold">
+              <h1 className="mt-16 ml-8 text-center text-3xl font-semibold md:ml-1 md:text-6xl">
                 Únete a nosotros.
               </h1>
             </div>
-            <div className="p mt-[20rem] flex w-md items-center justify-center text-xl font-semibold">
+            <div className="p mb-2 flex w-md items-center justify-center px-6 pt-[2rem] text-xl font-semibold md:mt-[16rem] md:px-1">
               <p>
                 Únete a nosotros en este momento clave y se parte de la
                 transformación que llevará a Hyundai Motor España a nuevas

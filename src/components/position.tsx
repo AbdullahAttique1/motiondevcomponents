@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Position = () => {
   return (
     <div className="bg-white text-black">

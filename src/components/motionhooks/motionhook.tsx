@@ -146,7 +146,7 @@ const MotionHooks = () => {
       className="flex min-h-screen flex-col items-center justify-center"
     >
       <div className="mx-auto flex max-w-4xl flex-col gap-10">
-        {features.map((feature, index) => (
+        {features.map((feature) => (
           <MotionHooksCard feature={feature} />
         ))}
       </div>

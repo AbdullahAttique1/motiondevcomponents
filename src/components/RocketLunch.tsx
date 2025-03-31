@@ -1,5 +1,4 @@
 import { Rocket } from 'lucide-react'
-import React from 'react'
 import { motion } from 'motion/react'
 
 const RocketLunch = () => {

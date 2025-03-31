@@ -10,7 +10,7 @@ const HandiaHeader = () => {
   }
 
   return (
-    <div className="absolute top-0 right-0 left-0 z-50 flex w-full items-center justify-between p-4 px-8 text-sm text-white">
+    <div className="relative top-0 right-0 left-0 z-50 flex w-full flex-col items-center justify-between bg-white p-4 px-8 text-sm text-black md:flex-row lg:absolute lg:bg-transparent lg:text-white">
       <div className="text-sm" data-v-708fc68b="">
         <svg
           width="156"
@@ -36,7 +36,7 @@ const HandiaHeader = () => {
       </div>
 
       <nav>
-        <ul className="flex gap-4 text-xl">
+        <ul className="mt-4 flex gap-1 text-base md:mt-0 md:gap-4 md:text-xl">
           {navitems.map((item) => (
             <li key={item} className="relative">
               <motion.a
@@ -47,7 +47,7 @@ const HandiaHeader = () => {
               >
                 {item}
                 <motion.div
-                  className="absolute -bottom-2 left-0 z-10 h-1 bg-white"
+                  className="absolute -bottom-2 left-0 z-10 h-1 bg-black lg:bg-white"
                   variants={navAnimation}
                 />
               </motion.a>
@@ -56,7 +56,7 @@ const HandiaHeader = () => {
         </ul>
       </nav>
 
-      <div className="rtheader relative flex flex-col text-xs">
+      <div className="rtheader relative hidden flex-col text-xs lg:flex">
         <div className="ltborder absolute top-0 -left-4 h-12 w-5 border-l-2 border-white"></div>
 
         <div>Madrid</div>

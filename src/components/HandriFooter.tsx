@@ -1,7 +1,7 @@
 const HandriFooter = () => {
   return (
     <div>
-      <footer className="flex min-h-[30rem] items-start justify-between bg-neutral-800 px-16 py-20 text-white">
+      <footer className="flex min-h-[30rem] flex-col items-start justify-between bg-neutral-800 px-16 py-20 text-white md:flex-row">
         <div className="left flex gap-8">
           <div className="logo">
             <div className="text-sm" data-v-708fc68b="">

@@ -85,7 +85,7 @@ const CarmovesHaundai = () => {
           style={{
             y: translatetext,
           }}
-          className="uppertext absolute right-[40%] z-[55] text-8xl font-semibold text-neutral-800"
+          className="uppertext absolute right-[1%] z-[55] text-8xl font-semibold text-neutral-800 md:right-[40%]"
         >
           One {text}
         </motion.div>
@@ -137,7 +137,7 @@ const CarmovesHaundai = () => {
           style={{
             y: tralateContent4,
           }}
-          className="FourthImage absolute mt-[50rem] ml-[75rem]"
+          className="FourthImage absolute mt-[50rem] ml-[5rem] md:ml-[75rem]"
         >
           <img
             className="h-72 w-[23rem]"

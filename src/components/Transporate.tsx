@@ -21,12 +21,12 @@ const Transporate = () => {
   return (
     <div ref={ref} className="flex min-h-[150vh] flex-col bg-neutral-100">
       <div className="h-16 bg-white"></div>
-      <div className="m-auto mt-[10rem] w-2xl text-center text-4xl font-bold">
+      <div className="m-auto mt-[5rem] w-full px-2 text-center text-2xl font-bold md:mt-[10rem] md:w-2xl md:px-0 md:text-4xl">
         “Bienvenidos a la I Convención de Hyundai Motor España, dónde tú eres el
         protagonista. Nunca dejes de avanzar. Nunca dejes de desafiar lo
         convencional y de marcar el camino. Da lo mejor de ti mismo. Piensa sin
         límites mientras trabajas, porque juntos, hacemos Hyundai”
-        <div className="m-auto mt-10 w-xl text-center text-xl text-gray-700">
+        <div className="m-auto mt-10 w-full text-center text-xl text-gray-700 md:w-xl">
           Leopoldo Satrustegui, CEO Hyundai España
         </div>
         <motion.div
