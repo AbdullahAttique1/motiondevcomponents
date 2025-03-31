@@ -16,7 +16,7 @@ const HaundiJorney = () => {
             </div>
           </div>
 
-          <div className="right mt-20 w-[28rem] px-4 font-semibold lg:px-4 lg:text-base lg:text-lg">
+          <div className="right mt-20 w-[28rem] px-4 font-semibold lg:px-4 lg:text-base">
             Cada paso que damos nos acerca a un futuro de crecimiento y
             transformación. Este evento es un punto de encuentro para alinear
             fuerzas, compartir ideas y avanzar juntos. Un espacio para
@@ -95,7 +95,7 @@ const HaundiJorney = () => {
             </motion.span>
 
             <motion.span
-              className="-ml-4 flex flex-col text-2xl font-bold text-neutral-800 lg:flex-row lg:text-7xl"
+              className="-ml-4 flex flex-col text-2xl font-bold text-neutral-800 lg:text-7xl"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4, duration: 0.5 }}
