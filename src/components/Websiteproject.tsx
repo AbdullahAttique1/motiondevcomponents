@@ -38,7 +38,7 @@ const Websiteproject = () => {
             duration: 0.4,
             ease: 'easeInOut',
           }}
-          className="bg-background fixed top-0 right-0 left-0 -z-10 h-screen w-[100vw] overflow-hidden bg-cover bg-center bg-no-repeat md:w-[99.8]"
+          className="bg-background fixed top-0 right-0 left-0 -z-10 h-screen w-full overflow-hidden bg-cover bg-center bg-no-repeat md:w-[99.8vw]"
           style={{
             scale,
             height: '100vh',
