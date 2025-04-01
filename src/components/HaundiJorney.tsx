@@ -4,7 +4,7 @@ import { motion } from 'motion/react'
 const HaundiJorney = () => {
   return (
     <>
-      <div className="wraper w-[98.8vw] overflow-hidden md:w-[99.8vw]">
+      <div className="wraper w-[99.8vw] overflow-hidden md:w-[99.8vw]">
         <div className="m-auto flex w-full flex-col items-center justify-between lg:w-[52rem] lg:flex-row">
           <div className="left w-96 lg:w-44">
             <div className="heading mt-6 mb-4 text-xl lg:mt-1 lg:text-sm">

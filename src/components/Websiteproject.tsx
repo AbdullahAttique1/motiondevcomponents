@@ -45,7 +45,7 @@ const Websiteproject = () => {
         ></motion.div>
       </div>
 
-      <div className="w-[97vw] overflow-hidden md:w-[99vw]">
+      <div className="w-[99vw] overflow-hidden md:w-[99vw]">
         <HandiaHeader />
       </div>
 
@@ -58,7 +58,7 @@ const Websiteproject = () => {
       >
         <HyndriHero />
       </motion.div>
-      <div className="lay relative w-[97vw] overflow-hidden bg-white md:w-[97vw] lg:w-[99vw]">
+      <div className="lay relative w-[99vw] overflow-hidden bg-white md:w-[97vw] lg:w-[99vw]">
         <HaundiJorney />
       </div>
 
@@ -81,7 +81,7 @@ const Websiteproject = () => {
       <div className="bg-white">
         <CarsLinks />
       </div>
-      <div className="w-[97vw] overflow-hidden bg-white md:w-[98.8vw]">
+      <div className="w-[99vw] overflow-hidden bg-white md:w-[98.8vw]">
         <CalltoAction />
       </div>
       <div className="agenda bg-white">

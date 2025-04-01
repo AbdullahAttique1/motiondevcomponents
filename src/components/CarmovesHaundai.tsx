@@ -95,10 +95,10 @@ const CarmovesHaundai = () => {
           style={{
             y: tralateContent2,
           }}
-          className="firstimage absolute mt-[30rem]"
+          className="firstimage absolute mt-[10rem] md:mt-[56rem]"
         >
           <img
-            className="h-86 w-[15rem]"
+            className="h-72 w-[10rem] md:h-86 md:w-[15rem]"
             src="https://convencion-hyundai.plastic.design/_ipx/_/images/one-goal3.jpg"
             alt="Car Image"
           />
@@ -109,10 +109,10 @@ const CarmovesHaundai = () => {
           style={{
             y: tralateContent1,
           }}
-          className="SecondImage absolute mt-[20rem] ml-[16rem]"
+          className="SecondImage absolute mt-[20rem] ml-[9rem] md:ml-[16rem]"
         >
           <img
-            className="h-72 w-[24rem]"
+            className="h-44 w-[18rem] md:h-72 md:w-[24rem]"
             src="https://convencion-hyundai.plastic.design/_ipx/_/images/one-goal1.jpg"
             alt="Car Image"
           />

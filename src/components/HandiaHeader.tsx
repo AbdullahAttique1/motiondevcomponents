@@ -36,7 +36,7 @@ const HandiaHeader = () => {
       </div>
 
       <nav>
-        <ul className="mt-4 flex gap-4 text-base md:mt-0 md:text-xl">
+        <ul className="mt-4 flex gap-3 text-base md:mt-0 md:text-xl">
           {navitems.map((item) => (
             <li key={item} className="relative">
               <motion.a
