@@ -6,7 +6,7 @@ const HaundiJorney = () => {
     <>
       <div className="wraper w-[99.8vw] overflow-hidden md:w-[99.8vw]">
         <div className="m-auto flex w-full flex-col items-center justify-between lg:w-[52rem] lg:flex-row">
-          <div className="left w-96 lg:w-44">
+          <div className="left w-96 px-4 md:px-0 lg:w-44">
             <div className="heading mt-6 mb-4 text-xl lg:mt-1 lg:text-sm">
               Our journey
             </div>
@@ -16,7 +16,7 @@ const HaundiJorney = () => {
             </div>
           </div>
 
-          <div className="right mt-20 w-[28rem] px-4 font-semibold lg:px-4 lg:text-xl">
+          <div className="right mt-20 w-full px-4 font-semibold md:w-[28rem] lg:px-4 lg:text-xl">
             Cada paso que damos nos acerca a un futuro de crecimiento y
             transformación. Este evento es un punto de encuentro para alinear
             fuerzas, compartir ideas y avanzar juntos. Un espacio para
