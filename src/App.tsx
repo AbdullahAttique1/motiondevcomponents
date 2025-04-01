@@ -4,7 +4,7 @@ import Websiteproject from './components/Websiteproject'
 function App() {
   return (
     <>
-      <div className="w-[99.8dhw]">
+      <div className="overflow-clip">
         <Websiteproject />
       </div>
     </>

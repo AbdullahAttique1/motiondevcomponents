@@ -20,6 +20,8 @@ const Websiteproject = () => {
   })
 
   const opacity = useTransform(scrollY, [1, 280], [1, 0])
+  const scale = useTransform(scrollY, [0, 400], [1, 1.9])
+
   const sampleText = `Cuando
   unimos
   fuerzas, los
@@ -36,8 +38,9 @@ const Websiteproject = () => {
             duration: 0.4,
             ease: 'easeInOut',
           }}
-          className="bg-background fixed top-0 right-0 left-0 -z-10 h-screen w-[98.8vw] overflow-hidden bg-cover bg-center bg-no-repeat"
+          className="bg-background fixed top-0 right-0 left-0 -z-10 h-screen w-[100vw] overflow-hidden bg-cover bg-center bg-no-repeat md:w-[99.8]"
           style={{
+            scale,
             height: '100vh',
             backgroundImage:
               "url('https://convencion-hyundai.plastic.design/images/hero.jpg')",
@@ -58,7 +61,7 @@ const Websiteproject = () => {
       >
         <HyndriHero />
       </motion.div>
-      <div className="lay relative w-[99vw] overflow-hidden bg-white md:w-[97vw] lg:w-[99vw]">
+      <div className="lay relative w-[99vw] overflow-hidden bg-white md:w-[99vw] lg:w-[99vw]">
         <HaundiJorney />
       </div>
 
